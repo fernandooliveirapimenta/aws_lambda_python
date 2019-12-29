@@ -1,0 +1,35 @@
+Principais usos:
+Processamento em tempo de real de arquivos: ex pdf, imagens
+Processamento de stream
+ETL
+substituto de cron
+process aws events
+
+sem stado stateless
+Lambda triggers:
+S3, amazon simple email service, kinesis firehose,
+dynaodb, sns, sqs, aws config, aws iot button, amazon lex, cloud watch, cloudformation, api gateway, cloud front, cognito, codecommit.
+
+ex arquiteturas:
+s3 -> lambda -> elastic search service
+
+s3 -> lambda -> aws data pipeline
+
+s3 -> lambda <-> dynamodb -> lambda -> redshift
+
+Lambda + kinesis:
+codigo lambda recebe evento de um stream de dados em batch
+
+Preco:
+Pague pelo quanto usou
+0.20 por milhao de requests
+
+Alta disponibilidade
+unlimites scalabilidade *
+alta performance com tempo maximo de 15 min ou 900 s
+
+Anti padroes
+dynamic websites
+stateful applications
+
+
